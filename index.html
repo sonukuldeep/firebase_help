@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script type="module" defer src="./Assets/firebaseConfig.js"></script>
+    <script type="module" defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>FireBase Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li>signup</li>
+                    <li>signin</li>
+                    <li>realtime database
+                        <ul>
+                            <li>add data</li>
+                            <li>read data</li>
+                            <li>update data</li>
+                            <li>delete data</li>
+                        </ul>
+                    </li>
+                    <li>cloud database
+                        <ul>
+                            <li>add data</li>
+                            <li>read data</li>
+                            <li>update data</li>
+                            <li>delete data</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <!-- <button></button> -->
+                <form id="SigninForm">
+                    <h3>Enter desired email and password</h3>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <label for="msg">Message</label>
+                    <input type="password" name="passwd" minlength="6" required>
+                    <button type="submit">Signup</button>
+                </form>
+                <form id="myForm">
+                    <h3>Hello world.. enter your secrets</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                    <label for="msg">Message</label>
+                    <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

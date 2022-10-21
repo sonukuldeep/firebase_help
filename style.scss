@@ -1,0 +1,59 @@
+@import "utility";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 40px;
+    list-style: none;
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background-color: $sand-greeen;
+    color: #fff;
+
+    &>li {
+        margin: auto;
+        cursor: pointer;
+        padding: 12px 20px;
+
+        &:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: 40px;
+            width: 150px;
+            height: max-content;
+            padding: 5px 10px;
+            border-top: 2px solid #fff;
+            border-radius: 5px;
+            line-height: 1.2;
+            letter-spacing: normal;
+            
+            li {
+                padding: 0;
+                width: 130px;
+                display: flex;
+                justify-content: center;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    &>li:hover ul {
+        display: flex;
+    }
+}
