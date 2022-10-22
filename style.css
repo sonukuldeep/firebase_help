@@ -52,3 +52,7 @@
 .nav ul > li:hover ul {
   display: flex;
 }
+
+main .container form {
+  display: none;
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script type="module" defer src="./Assets/firebaseConfig.js"></script>
+    <!-- <script type="module" defer src="./Assets/firebaseConfig.js"></script> -->
     <script type="module" defer src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>FireBase Form</title>
@@ -43,22 +43,78 @@
         <section>
             <div class="container">
                 <!-- <button></button> -->
-                <form id="SigninForm">
+                <form id="SignUpForm">
                     <h3>Enter desired email and password</h3>
                     <label for="email">Email</label>
                     <input type="email" name="email" required>
-                    <label for="msg">Message</label>
+                    <label for="passwd">Message</label>
                     <input type="password" name="passwd" minlength="6" required>
                     <button type="submit">Signup</button>
+                    <button type="button" id="signout-btn-1">logout</button>
                 </form>
-                <form id="myForm">
-                    <h3>Hello world.. enter your secrets</h3>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" required>
+                <form id="SigninForm">
+                    <h3>Enter your email and password</h3>
                     <label for="email">Email</label>
                     <input type="email" name="email" required>
+                    <label for="passwd">Message</label>
+                    <input type="password" name="passwd" minlength="6" required>
+                    <button type="submit">Signin</button>
+                    <button type="submit" id="signout-btn-2">Signout</button>
+                </form>
+                <form id="RTDBFormAdd">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
                     <label for="msg">Message</label>
                     <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="RTDBFormRead">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <div>
+                        name: <span></span>
+                        message: <span></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="RTDBFormUpdate">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="msg">Message</label>
+                    <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="RTDBFormDelete">
+                    <h3>Hello world.. delete your message</h3>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="CDBFormAdd">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="msg">Message</label>
+                    <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="CDBFormRead">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <div>
+                        name: <span></span>
+                        message: <span></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="CDBFormUpdate">
+                    <h3>Hello world.. add your name and a msg</h3>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="msg">Message</label>
+                    <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <form id="CDBFormDelete">
+                    <h3>Hello world.. delete your message</h3>
                     <button type="submit">Submit</button>
                 </form>
             </div>
