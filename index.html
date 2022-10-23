@@ -17,22 +17,22 @@
         <nav>
             <div class="nav">
                 <ul>
-                    <li>signup</li>
-                    <li>signin</li>
+                    <li class="trigger">signup</li>
+                    <li class="trigger">signin</li>
                     <li>realtime database
                         <ul>
-                            <li>add data</li>
-                            <li>read data</li>
-                            <li>update data</li>
-                            <li>delete data</li>
+                            <li class="trigger">add data</li>
+                            <li class="trigger">read data</li>
+                            <li class="trigger">update data</li>
+                            <li class="trigger">delete data</li>
                         </ul>
                     </li>
                     <li>cloud database
                         <ul>
-                            <li>add data</li>
-                            <li>read data</li>
-                            <li>update data</li>
-                            <li>delete data</li>
+                            <li class="trigger">add data</li>
+                            <li class="trigger">read data</li>
+                            <li class="trigger">update data</li>
+                            <li class="trigger">delete data</li>
                         </ul>
                     </li>
                 </ul>
@@ -47,19 +47,19 @@
                     <h3>Enter desired email and password</h3>
                     <label for="email">Email</label>
                     <input type="email" name="email" required>
-                    <label for="passwd">Message</label>
+                    <label for="passwd">Password</label>
                     <input type="password" name="passwd" minlength="6" required>
-                    <button type="submit">Signup</button>
-                    <button type="button" id="signout-btn-1">logout</button>
+                    <button type="submit" class="signin-btn">Signup</button>
+                    <button type="button" class="signout-btn" id="signout-btn-1">logout</button>
                 </form>
                 <form id="SigninForm">
                     <h3>Enter your email and password</h3>
                     <label for="email">Email</label>
                     <input type="email" name="email" required>
-                    <label for="passwd">Message</label>
+                    <label for="passwd">Password</label>
                     <input type="password" name="passwd" minlength="6" required>
-                    <button type="submit">Signin</button>
-                    <button type="submit" id="signout-btn-2">Signout</button>
+                    <button type="submit" class="signin-btn">Signin</button>
+                    <button type="button" class="signout-btn" id="signout-btn-2">Signout</button>
                 </form>
                 <form id="RTDBFormAdd">
                     <h3>Hello world.. add your name and a msg</h3>
@@ -78,11 +78,11 @@
                     <button type="submit">Submit</button>
                 </form>
                 <form id="RTDBFormUpdate">
-                    <h3>Hello world.. add your name and a msg</h3>
+                    <h3>Hello world.. update your name and a msg</h3>
                     <label for="name">Name</label>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name">
                     <label for="msg">Message</label>
-                    <textarea type="text" name="msg" row="10" cols="30" required></textarea>
+                    <textarea type="text" name="msg" row="10" cols="30"></textarea>
                     <button type="submit">Submit</button>
                 </form>
                 <form id="RTDBFormDelete">

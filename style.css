@@ -53,6 +53,24 @@
   display: flex;
 }
 
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  background-color: rgb(213, 213, 213);
+}
 main .container form {
   display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px 10px #333;
+}
+main .container form h3 {
+  text-decoration: underline;
 }
